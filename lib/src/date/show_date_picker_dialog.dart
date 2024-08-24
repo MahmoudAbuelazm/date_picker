@@ -38,6 +38,7 @@ Future<DateTime?> showDatePickerDialog({
   required BuildContext context,
   required DateTime maxDate,
   required DateTime minDate,
+  required Color backgroundColor,
   double? width,
   double? height,
   DateTime? initialDate,
@@ -95,6 +96,7 @@ Future<DateTime?> showDatePickerDialog({
         return Padding(
           padding: padding,
           child: Dialog(
+            backgroundColor: backgroundColor,
             insetPadding: EdgeInsets.zero,
             child: SizedBox(
               width: width ?? size.width,
